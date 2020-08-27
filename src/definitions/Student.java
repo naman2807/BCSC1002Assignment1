@@ -18,4 +18,36 @@ public class Student {
         this.numberOfBooksIssued = numberOfBooksIssued;
         this.issuedBooks = new Book[numberOfBooksIssued];
     }
+
+    public String[] getNameOfStudent() {
+        return nameOfStudent;
+    }
+
+    public void setNameOfStudent(String[] nameOfStudent) {
+        this.nameOfStudent = nameOfStudent;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public Book[] getIssuedBooks() {
+        return issuedBooks;
+    }
+
+    public void setIssuedBooks(Book[] issuedBooks) {
+        this.issuedBooks = issuedBooks;
+    }
 }
