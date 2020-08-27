@@ -21,7 +21,6 @@ public class FrontDesk {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int studentInput;
-
         Book maths = new Book("Maths", "RD Sharma", "MT4561");
         Book physics = new Book("Physics", "S Chand", "PH7546");
         Book chemistry = new Book("Chemistry", "RS Mishra", "CH1234");
@@ -34,7 +33,6 @@ public class FrontDesk {
         library.addNewBookToLibrary(biology);
 
         Student naman = new Student("Naman Agarwal", 191500469, 5);
-
         do {
             System.out.println(" -=-=--=-=-Welcome To The Front Desk-=-=--=-=-\n" +
                     "How may I help you today?\n" +
@@ -71,10 +69,11 @@ public class FrontDesk {
                     for (Book issuedBook : issuedBooks) {
                         System.out.println(issuedBook);
                     }
+                    break;
+                default:
+                    System.out.println("WRONG OPTION.");
             }
         } while (studentInput != EXIT);
         scanner.close();
-
-
     }
 }
