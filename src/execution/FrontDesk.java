@@ -1,13 +1,19 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:50 PM
- *  File Name : FrontDesk.java
+ *  User: Naman Agarwal (naman2807)
+ *  Date: 27/08/20
+ *  Time: 11:58 pm
+ *  File Name : Book.java
  * */
 package execution;
 
+import definitions.Book;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Book maths = new Book("Maths", "RD Sharma", "MT4561");
+        Book physics = new Book("Physics", "S Chand", "PH7546");
+        Book chemistry = new Book("Chemistry", "RS Mishra", "CH1234");
+        Book biology = new Book("Biology", "Deepam Mishra", "BI1597");
 
     }
 }
