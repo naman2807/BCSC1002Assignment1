@@ -41,7 +41,6 @@ public class Library {
     public Book issueBookFromLibrary(Book bookToBeIssued) {
         for (Book book : availableBooksInLibrary) {
             if (book.equals(bookToBeIssued)) {
-                System.out.println("Book has been issued. ");
                 return bookToBeIssued;
             }
         }
