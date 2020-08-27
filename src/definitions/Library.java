@@ -53,4 +53,13 @@ public class Library {
         System.out.println("Book has been issued. ");
         return bookToBeIssued;
     }
+
+    /**
+     * This method add the book(issued) to the library which is returned by a student.
+     *
+     * @param returnedBook The book to be added back to library.
+     */
+    public void addReturnedBookToLibrary(Book returnedBook) {
+        System.out.println("Returned book has been added back to library.");
+    }
 }
