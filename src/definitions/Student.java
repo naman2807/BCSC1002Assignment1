@@ -70,11 +70,6 @@ public class Student {
      * @return a book to be returned.
      */
     public Book returnIssuedBook(String bookToReturn) {
-        for (Book book : issuedBooks) {
-            if (book.getBookName().equals(bookToReturn)) {
-                return book;
-            }
-        }
         return null;
     }
 

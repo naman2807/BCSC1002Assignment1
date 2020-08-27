@@ -39,11 +39,6 @@ public class Library {
      * @return a book to be issued.
      */
     public Book issueBookFromLibrary(String bookToBeIssued) {
-        for (Book book : availableBooksInLibrary) {
-            if (book.getBookName().equals(bookToBeIssued)) {
-                return book;
-            }
-        }
         return null;
     }
 
