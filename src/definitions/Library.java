@@ -38,10 +38,10 @@ public class Library {
      * @param bookToBeIssued The book to be issued by a student.
      * @return a book to be issued.
      */
-    public Book issueBookFromLibrary(Book bookToBeIssued) {
+    public Book issueBookFromLibrary(String bookToBeIssued) {
         for (Book book : availableBooksInLibrary) {
-            if (book.equals(bookToBeIssued)) {
-                return bookToBeIssued;
+            if (book.getBookName().equals(bookToBeIssued)) {
+                return book;
             }
         }
         return null;
