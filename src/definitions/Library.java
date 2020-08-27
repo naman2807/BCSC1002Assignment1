@@ -33,14 +33,19 @@ public class Library {
     }
 
     /**
-     * This method returns a book to be issued by a student.
+     * This method checks if the book is present in the library and returns a book(if present) to be issued by a student.
      *
      * @param bookToBeIssued The book to be issued by a student.
      * @return a book to be issued.
      */
     public Book issueBookFromLibrary(Book bookToBeIssued) {
-        System.out.println("Book has been issued. ");
-        return bookToBeIssued;
+        for (Book book : availableBooksInLibrary) {
+            if (book.equals(bookToBeIssued)) {
+                System.out.println("Book has been issued. ");
+                return bookToBeIssued;
+            }
+        }
+        return null;
     }
 
     /**
