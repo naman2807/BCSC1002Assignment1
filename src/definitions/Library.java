@@ -42,4 +42,15 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(availableBooksInLibrary);
     }
+
+    /**
+     * This method returns a book to be issued by a student.
+     *
+     * @param bookToBeIssued The book to be issued by a student.
+     * @return a book to be issued.
+     */
+    public Book issueBookFromLibrary(Book bookToBeIssued) {
+        System.out.println("Book has been issued. ");
+        return bookToBeIssued;
+    }
 }
