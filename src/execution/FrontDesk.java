@@ -23,6 +23,10 @@ public class FrontDesk {
         Book biology = new Book("Biology", "Deepam Mishra", "BI1597");
 
         Library library = new Library();
+        library.addNewBookToLibrary(maths);
+        library.addNewBookToLibrary(physics);
+        library.addNewBookToLibrary(chemistry);
+        library.addNewBookToLibrary(biology);
 
         Student naman = new Student("Naman Agarwal", 191500469, 5);
 
