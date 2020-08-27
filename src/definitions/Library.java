@@ -23,24 +23,13 @@ public class Library {
         this.availableBooksInLibrary = availableBooksInLibrary;
     }
 
-    @Override
-    public String toString() {
-        return "Library{" +
-                "availableBooksInLibrary=" + Arrays.toString(availableBooksInLibrary) +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Library library = (Library) o;
-        return Arrays.equals(availableBooksInLibrary, library.availableBooksInLibrary);
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(availableBooksInLibrary);
+    /**
+     * This method add a new book to the library.
+     *
+     * @param newBook book to be added.
+     */
+    public void addNewBookToLibrary(Book newBook) {
+        System.out.println("New Book has been added to library.");
     }
 
     /**
@@ -61,5 +50,25 @@ public class Library {
      */
     public void addReturnedBookToLibrary(Book returnedBook) {
         System.out.println("Returned book has been added back to library.");
+    }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "availableBooksInLibrary=" + Arrays.toString(availableBooksInLibrary) +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(availableBooksInLibrary, library.availableBooksInLibrary);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(availableBooksInLibrary);
     }
 }
