@@ -8,6 +8,7 @@ package execution;
 
 import definitions.Book;
 import definitions.Library;
+import definitions.Student;
 
 public class FrontDesk {
     public static void main(String[] args) {
@@ -17,6 +18,8 @@ public class FrontDesk {
         Book biology = new Book("Biology", "Deepam Mishra", "BI1597");
 
         Library library = new Library();
+
+        Student naman = new Student("Naman Agarwal", 191500469, 5);
 
     }
 }
