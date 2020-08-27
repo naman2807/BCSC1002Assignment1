@@ -50,4 +50,13 @@ public class Student {
     public void setIssuedBooks(Book[] issuedBooks) {
         this.issuedBooks = issuedBooks;
     }
+
+    /**
+     * This method issue book to a student.
+     *
+     * @param issueBook The book to be issued to a student.
+     */
+    public void issueBook(Book issueBook) {
+        System.out.println("Book has been issued to student.");
+    }
 }
