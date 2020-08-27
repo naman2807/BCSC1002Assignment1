@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private String[] nameOfStudent;
     private long universityRollNumber;
@@ -69,5 +71,13 @@ public class Student {
     public Book returnIssuedBook(Book bookToReturn) {
         System.out.println("Book has been returned to library.");
         return bookToReturn;
+    }
+
+    @Override
+    public String toString() {
+        return "Student Name: " + Arrays.toString(nameOfStudent) +
+                "\nUniversity Roll Number: " + universityRollNumber +
+                "\nNumber Of Books Issued: " + numberOfBooksIssued +
+                "\nIssued Books: " + Arrays.toString(issuedBooks);
     }
 }
