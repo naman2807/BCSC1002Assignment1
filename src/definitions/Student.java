@@ -12,4 +12,10 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] issuedBooks;
 
+    public Student(String studentName, long universityRollNumber, int numberOfBooksIssued) {
+        this.nameOfStudent = studentName.split(" ");
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBooksIssued = numberOfBooksIssued;
+        this.issuedBooks = new Book[numberOfBooksIssued];
+    }
 }
