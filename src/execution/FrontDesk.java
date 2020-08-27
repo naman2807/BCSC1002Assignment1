@@ -11,6 +11,11 @@ import definitions.Library;
 import definitions.Student;
 
 public class FrontDesk {
+    private static final int ISSUE_BOOK_TO_STUDENT = 1;
+    private static final int RETURN_ISSUED_BOOK = 2;
+    private static final int SHOW_ISSUED_BOOKS = 3;
+    private static final int EXIT = 4;
+
     public static void main(String[] args) {
         Book maths = new Book("Maths", "RD Sharma", "MT4561");
         Book physics = new Book("Physics", "S Chand", "PH7546");
@@ -20,6 +25,7 @@ public class FrontDesk {
         Library library = new Library();
 
         Student naman = new Student("Naman Agarwal", 191500469, 5);
+
 
     }
 }
