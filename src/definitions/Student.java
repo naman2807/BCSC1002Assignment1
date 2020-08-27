@@ -59,4 +59,15 @@ public class Student {
     public void issueBook(Book issueBook) {
         System.out.println("Book has been issued to student.");
     }
+
+    /**
+     * This method returns the issued book back to library
+     *
+     * @param bookToReturn The issued book to be returned.
+     * @return a book to be returned.
+     */
+    public Book returnIssuedBook(Book bookToReturn) {
+        System.out.println("Book has been returned to library.");
+        return bookToReturn;
+    }
 }
