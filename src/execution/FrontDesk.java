@@ -32,7 +32,7 @@ public class FrontDesk {
         library.addNewBookToLibrary(chemistry);
         library.addNewBookToLibrary(biology);
 
-        Student naman = new Student("Naman Agarwal", 191500469, 5);
+        Student naman = new Student("Naman Agarwal", 191500469);
         do {
             System.out.println(" -=-=--=-=-Welcome To The Front Desk-=-=--=-=-\n" +
                     "How may I help you today?\n" +
